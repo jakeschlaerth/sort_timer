@@ -4,18 +4,6 @@ import random
 import time
 
 
-def time_decorator(func):
-    """decorator function that returns the time needed for a passed sorting algorithm to complete"""
-    def wrapper(*args, **kwargs):
-        start_time = time.perf_counter()
-        func(*args, **kwargs)
-        end_time = time.perf_counter()
-        run_time = end_time - start_time
-        print(run_time, end="")
-        return run_time
-    return wrapper
-
-
 def randList(n):
     """
     fills an list of length n with random integers between 0 and 10000
