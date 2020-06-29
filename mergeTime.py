@@ -54,7 +54,7 @@ def mergeSort(num_list):
             k += 1
 
 
-for i in range(5000, 25000, 5000):
+for i in range(5000, 22500, 2500):
     random_list = randList(i)
     print("array of length", i, "sorted in ", end="")
     start_time = time.perf_counter()
