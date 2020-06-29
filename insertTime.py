@@ -44,7 +44,7 @@ def insertionSort(num_list):
         num_list[j + 1] = current
 
 
-for i in range(5000, 22500, 2500):
+for i in range(10, 201, 10):
     random_list = randList(i)
     print("array of length", i, "sorted in ", end="")
     insertionSort(random_list)
